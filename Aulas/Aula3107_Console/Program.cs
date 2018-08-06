@@ -17,45 +17,46 @@ namespace Aula3107_Console
         static void Main(string[] args)
         {
             int op;
-            Console.WriteLine("Hello World...\n");
+            //Console.WriteLine("Hello World...\n");
+            Console.WriteLine("==========================  Calculadora básica  ==========================");
 
-            Console.WriteLine("Digite o 1° número: ");
-            n1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o 2° número: ");
-            n2 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("\n\nEscolha a operação: \n1 - #Soma \n2 - #Subtração \n3 - #Multiplicação \n4 - #Divisão");
-            op = int.Parse(Console.ReadLine());
-
-            while(op != 0)
+            do
             {
 
-            if(op == 1)
-            {
-                result = imprimirSoma(n1, n2);
-            }
-            else if(op == 2)
-            {
-                result = imprimirSubtracao(n1, n2);
-            }
-            else if(op == 3)
-            {
-                result = imprimirMultiplicacao(n1, n2);
-            }
-            else if(op == 4)
-            {
-                imprimirDivisao(n1, n2);
-            }
-            else if(op == 0)
-            {
-                Console.ReadKey();
-            }
+                Console.WriteLine("\nDigite o 1° número: ");
+                n1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("\nDigite o 2° número: ");
+                n2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\n\n==== Resultado =====\n" + result);
-            }
+                Console.WriteLine("\nEscolha a operação a ser efetuada: \n1 - #Soma \n2 - #Subtração \n3 - #Multiplicação \n4 - #Divisão \n0 - #Sair\n");
+                Console.WriteLine("Digite sua opção: ");
+                op = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\n\nEscolha a operação: \n1 - #Soma \n2 - #Subtração \n3 - #Multiplicação \n4 - #Divisão");
-            op = int.Parse(Console.ReadLine());
+                if (op == 1)
+                {
+                    result = imprimirSoma(n1, n2);
+                }
+                else if (op == 2)
+                {
+                    result = imprimirSubtracao(n1, n2);
+                }
+                else if (op == 3)
+                {
+                    result = imprimirMultiplicacao(n1, n2);
+                }
+                else if (op == 4)
+                {
+                    imprimirDivisao(n1, n2);
+                }
+                else if (op == 0)
+                {
+                    break;
+                }
+
+                Console.WriteLine("\nResultado = " + result);
+
+            } while (op != 0);
+
         }
 
         static int imprimirSoma(int n1, int n2)
@@ -81,6 +82,5 @@ namespace Aula3107_Console
             int res = n1 / n2;
             return res;
         }
-
     }
 }
