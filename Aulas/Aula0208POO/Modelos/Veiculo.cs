@@ -12,6 +12,5 @@ namespace Aula0208POO.Modelos
         public string Modelo { get; set; }
         public int Ano { get; set; }
        
-
     }
 }

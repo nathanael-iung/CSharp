@@ -9,17 +9,24 @@ namespace Aula0208POO.Modelos
     class Carro : Veiculo, IMotorizado
     {
         public int Velocidade { get; set; }
-
+        public float Carteira { get; set; }
+        
         public void Acelerar()
         {
-            Console.WriteLine("Acelerando...VRUUUUUM");
+            Console.WriteLine("Uno Acelerando...VRUUUUUM");
             Velocidade += 5;
         }
 
         public void Frenar()
         {
-            Console.WriteLine("Desacelerando...IIIIIRRRR");
+            Console.WriteLine("Uno Desacelerando...IIIIIRRRR");
             Velocidade -= 3;
+        }
+
+        public void Infracao()
+        {
+            Console.WriteLine("Infração cometida. 10 pontos na carteira. Multa de R$1550,00.");
+            Carteira -= 1550;
         }
     }
 }

@@ -10,17 +10,24 @@ namespace Aula0208POO.Modelos
 
     {
         public int Velocidade { get; set; }
-    
+        public float Carteira { get; set; }
+
         public void Acelerar()
         {
-            Console.WriteLine("Acelerando...");
-            Velocidade += 195;
+            Console.WriteLine("R1 Acelerando...");
+            Velocidade += 150;
         }
 
         public void Frenar()
         {
-            Console.WriteLine("Desacelerando...");
-            Velocidade += 5;
+            Console.WriteLine("R1 Desacelerando...");
+            Velocidade -= 120;
+        }
+
+        public void Infracao()
+        {
+            Console.WriteLine("Infração cometida. 5 pontos na carteira. Multa de R$658,00");
+            Carteira -= 658;
         }
     }
 }
