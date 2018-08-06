@@ -41,7 +41,7 @@ namespace Aula0208POO
         static void ExecutarTesteMotor(IMotorizado vec)
         {
             Console.WriteLine("\n\nVelocidade atual: " + vec.Velocidade);
-            Console.WriteLine("Nìvel da pobreza: R$" + vec.Carteira);
+            Console.WriteLine("--Nìvel da pobreza: R$" + vec.Carteira);
         }
     }
 }
