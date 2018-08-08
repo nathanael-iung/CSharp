@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aula0708_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="795.5">
-    <Grid Margin="10,-19,441,35">
+        Title="MainWindow" Height="450" Width="837">
+    <Grid Margin="24,-19,466,0" HorizontalAlignment="Center" Width="344" VerticalAlignment="Top" Height="415">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
@@ -17,15 +17,16 @@
         <Button x:Name="btn4" Grid.ColumnSpan="2" Content="4" HorizontalAlignment="Left" Margin="28,282,0,0" VerticalAlignment="Top" Width="76"/>
         <Button x:Name="btn8" Grid.ColumnSpan="2" Content="8" HorizontalAlignment="Left" Margin="135,324,0,0" VerticalAlignment="Top" Width="76"/>
         <Button x:Name="btn7" Grid.ColumnSpan="2" Content="7" HorizontalAlignment="Left" Margin="28,324,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button x:Name="btnDivisao" Grid.ColumnSpan="2" Content="/" HorizontalAlignment="Left" Margin="245,196,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button x:Name="btn0" Grid.ColumnSpan="2" Content="0" HorizontalAlignment="Left" Margin="135,367,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.053,5.2"/>
-        <Button x:Name="btnMultiplicacao" Grid.ColumnSpan="2" Content="X" HorizontalAlignment="Left" Margin="28,196,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btnDivisao" Grid.ColumnSpan="2" Content="/" HorizontalAlignment="Left" Margin="244,367,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btnMultiplicacao" Grid.ColumnSpan="2" Content="X" HorizontalAlignment="Left" Margin="30,367,0,0" VerticalAlignment="Top" Width="76"/>
         <Button x:Name="btn3" Grid.ColumnSpan="2" Content="3" HorizontalAlignment="Left" Margin="245,237,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btn2" Grid.ColumnSpan="2" Content="2" HorizontalAlignment="Left" Margin="135,242,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="lblResposta" Grid.ColumnSpan="2" Content="Resultado" HorizontalAlignment="Left" Margin="29,76,0,0" VerticalAlignment="Top" Width="291"/>
-        <Button x:Name="btnSubtracao" Grid.ColumnSpan="2" Content="-" HorizontalAlignment="Left" Margin="136,196,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button x:Name="btnAdicao" Grid.ColumnSpan="2" Content="+" HorizontalAlignment="Left" Margin="136,152,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Margin="30,242,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="btnSubtracao" Grid.ColumnSpan="2" Content="-" HorizontalAlignment="Left" Margin="244,201,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btn1" Grid.ColumnSpan="2" Content="1" HorizontalAlignment="Left" Margin="30,242,0,0" VerticalAlignment="Top" Width="74" Click="btn1_Click"/>
+        <Button x:Name="btnIgual" Grid.ColumnSpan="2" Content="=" HorizontalAlignment="Left" Margin="135,201,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btnPonto" Grid.ColumnSpan="2" Content="." HorizontalAlignment="Left" Margin="134,162,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox x:Name="txtResultado" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="22" Margin="28,120,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" Width="290" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="btn0" Grid.ColumnSpan="2" Content="0" HorizontalAlignment="Left" Margin="134,367,0,0" VerticalAlignment="Top" Width="76"/>
 
     </Grid>
 </Window>
