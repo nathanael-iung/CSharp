@@ -22,6 +22,7 @@ namespace Calculadora_WPF
     {
         long n1 = 0;
         long n2 = 0;
+        long? mem = null;
         String op = "";
 
         public MainWindow()
@@ -245,21 +246,25 @@ namespace Calculadora_WPF
                 //caso "op" esteja preenchido com +, a conta será efetuada
                 case "+":
                     txtResultado.Text = (n1 + n2).ToString();
-                break;
+                    mem = n1 + n2;
+                    break;
 
                 //caso "op" esteja preenchido com -, a conta será efetuada
                 case "-":
                     txtResultado.Text = (n1 - n2).ToString();
+                    mem = n1 - n2;
                     break;
 
                 //caso "op" esteja preenchido com *, a conta será efetuada
                 case "*":
                     txtResultado.Text = (n1 * n2).ToString();
+                    mem = n1 * n2;
                     break;
 
                 //caso "op" esteja preenchido com /, a conta será efetuada
                 case "/":
                     txtResultado.Text = (n1 / n2).ToString();
+                    mem = n1 / n2;
                     break;
 
             }
@@ -293,6 +298,15 @@ namespace Calculadora_WPF
             op = "";
             //Zerar o resultado na tela ao pressionar o botão
             txtResultado.Text = "0";
+        }
+
+        private void btnMemoria_Click(object sender, RoutedEventArgs e)
+        {
+            txtUltimoResultado.Text = mem.ToString();
+            if (String.IsNullOrEmpty(op) && mem.HasValue == true)
+            {
+                
+            }
         }
     }
 
