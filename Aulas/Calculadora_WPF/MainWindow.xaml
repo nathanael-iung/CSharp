@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculadora_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="443.5" Width="393.334">
+        Title="MainWindow" Height="436.5" Width="348.334">
     <Grid Margin="0,-23,-8,-3">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
@@ -14,34 +14,39 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="14*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="388*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="498*"/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn0_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="193,227,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn6_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="100,227,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn5_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn4_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="194,291,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn9_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="100,291,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn8_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn7_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnRaizQuadrada" Content="ѵ" HorizontalAlignment="Left" Margin="281,352,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnRaizQuadrada_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="194,167,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn3_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="99,167,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn2_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnMultiplicacao" Content="*" HorizontalAlignment="Left" Margin="281,227,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnMultiplicacao_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnSubtracao" Content="-" HorizontalAlignment="Left" Margin="281,167,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Foreground="White" Background="Black" Click="btnSubtracao_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnAdicao" Content="+" HorizontalAlignment="Left" Margin="281,106,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnAdicao_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnDivisao" Content="/" HorizontalAlignment="Left" Margin="281,291,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Foreground="White" BorderBrush="Black" Background="Black" Click="btnDivisao_Click" Height="45" FontSize="22"/>
-        <TextBox x:Name="txtResultado" HorizontalAlignment="Left" Height="30" Margin="10,59,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" BorderThickness="1" BorderBrush="Black" Background="White" IsEnabled="False" FontSize="22" FontFamily="Arial"/>
-        <Label x:Name="label" Content="Calculadora C# - WPF" HorizontalAlignment="Center" Margin="10,18,187,0" Grid.Row="2" VerticalAlignment="Top" Width="196" Height="26" FontFamily="Algerian" Foreground="Black" FontSize="16"/>
-        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn1_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnIgual" Content="=" HorizontalAlignment="Left" Margin="100,352,0,0" Grid.Row="2" VerticalAlignment="Top" Width="170" Background="Black" BorderBrush="Black" Foreground="White" Click="btnIgual_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnApagar" Content="←" HorizontalAlignment="Left" Margin="100,106,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Click="btnApagar_Click" Height="45" FontSize="22"/>
-        <Button x:Name="btnCe" Content="Œ" HorizontalAlignment="Left" Margin="10,106,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="Black" Foreground="White" Click="btnCe_Click" Height="45" FontSize="22"/>
-        <Label x:Name="lblUr" Content="UR:" HorizontalAlignment="Left" Margin="211,18,0,0" Grid.Row="2" VerticalAlignment="Top" Width="43" FontSize="16" FontFamily="Algerian"/>
-        <TextBox x:Name="txtUltimoResultado" HorizontalAlignment="Left" Height="23" Margin="254,21,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontSize="16" FontFamily="Arial Black" BorderBrush="Black" IsEnabled="False"/>
-        <Button x:Name="btnMemoria" Content="M" HorizontalAlignment="Left" Margin="193,106,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Click="btnMemoria_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="11,369,0,0" VerticalAlignment="Top" Width="76" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn0_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="170,269,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn6_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="90,269,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn5_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn4_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="171,319,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn9_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="91,319,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn8_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="12,319,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn7_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnRaizQuadrada" Content="ѵ" HorizontalAlignment="Left" Margin="251,369,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnRaizQuadrada_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="170,219,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="White" BorderBrush="Black" Click="btn3_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="90,219,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn2_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnMultiplicacao" Content="*" HorizontalAlignment="Left" Margin="251,269,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnMultiplicacao_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnSubtracao" Content="-" HorizontalAlignment="Left" Margin="251,219,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Foreground="White" Background="Black" Click="btnSubtracao_Click" Height="45" FontSize="22" RenderTransformOrigin="0.293,0.556"/>
+        <Button x:Name="btnAdicao" Content="+" HorizontalAlignment="Left" Margin="251,169,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Background="Black" BorderBrush="Black" Foreground="White" Click="btnAdicao_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnDivisao" Content="÷" HorizontalAlignment="Left" Margin="251,319,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Foreground="White" BorderBrush="Black" Background="Black" Click="btnDivisao_Click" Height="45" FontSize="22"/>
+        <TextBox x:Name="txtResultado" HorizontalAlignment="Left" Height="30" Margin="11,72,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" BorderThickness="1" BorderBrush="Black" Background="White" IsEnabled="False" FontSize="22" FontFamily="Arial"/>
+        <Label x:Name="lblNome" Content="Calculadora C# - WPF" HorizontalAlignment="Center" Margin="9,41,139,0" Grid.Row="2" VerticalAlignment="Top" Width="196" Height="26" FontFamily="Arial Black" Foreground="Black" FontSize="16"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="9,219,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" BorderBrush="Black" Background="White" Click="btn1_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnIgual" Content="=" HorizontalAlignment="Left" Margin="169,119,0,0" Grid.Row="2" VerticalAlignment="Top" Width="77" Background="Black" BorderBrush="Black" Foreground="White" Click="btnIgual_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnApagar" Content="←" HorizontalAlignment="Left" Margin="90,119,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Click="btnApagar_Click" Height="45" FontSize="22"/>
+        <Button x:Name="btnCe" Content="Œ" HorizontalAlignment="Left" Margin="10,119,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" BorderBrush="Black" Background="Black" Foreground="White" Click="btnCe_Click" Height="45" FontSize="22"/>
+        <Label x:Name="lblMr" Content="MR: &#xD;&#xA;" HorizontalAlignment="Left" Margin="239,41,0,0" Grid.Row="2" VerticalAlignment="Top" Width="38" FontSize="16" FontFamily="Arial Black" Height="26"/>
+        <TextBox x:Name="txtMr" HorizontalAlignment="Left" Height="23" Margin="277,44,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontSize="16" FontFamily="Arial Black" BorderBrush="Black" IsEnabled="False"/>
+        <Button x:Name="btnMs" Content="MS" HorizontalAlignment="Left" Margin="10,169,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Click="btnMs_Click"/>
+        <Button x:Name="btnMc" HorizontalAlignment="Left" Margin="252,119,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Click="btnMc_Click" Content="MC"/>
+        <Button x:Name="btnPotenciacao" HorizontalAlignment="Left" Margin="171,369,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Content="X^Y" Click="btnPotenciacao_Click"/>
+        <Button x:Name="btnVirgula" HorizontalAlignment="Left" Margin="92,369,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Click="btnVirgula_Click" Content=","/>
+        <Button x:Name="btnMmais" HorizontalAlignment="Left" Margin="92,169,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Content="M+" Click="btnMmais_Click"/>
+        <Button x:Name="btnMmenos" HorizontalAlignment="Left" Margin="171,169,0,0" Grid.Row="2" VerticalAlignment="Top" Width="74" BorderBrush="#FF0C0C0C" Background="Black" Foreground="White" Height="45" FontSize="22" Content="M-" Click="btnMmenos_Click"/>
 
     </Grid>
 </Window>
