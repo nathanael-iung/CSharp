@@ -209,7 +209,7 @@ namespace Calculadora_WPF
         {
             op = "*";
             //O número 0 será mostrado na tela assim que o símbolo for pressionado
-            txtResultado.Text = "";
+            txtResultado.Text = ""; 
         }
 
         private void btnDivisao_Click(object sender, RoutedEventArgs e)
