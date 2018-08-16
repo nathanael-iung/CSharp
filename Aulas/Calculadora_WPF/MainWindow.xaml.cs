@@ -20,9 +20,7 @@ namespace Calculadora_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        long n1 = 0;
-        long n2 = 0;
-        long? mem = null;
+        float n1, n2, memoria, mem, temp = 0;
         String op = "";
 
         public MainWindow()
@@ -32,166 +30,171 @@ namespace Calculadora_WPF
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 1;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 1;
-                txtResultado.Text = n2.ToString();
-            }
-
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "1";
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 2;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 2;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "2";
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 3;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 3;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "3";
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 4;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 4;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "4";
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 5;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 5;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "5";
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 6;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 6;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "6";
         }
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 7;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 7;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "7";
         }
 
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 8;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 8;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "8";
         }
 
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
-            {
-                n1 = (n1 * 10) + 9;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10) + 9;
-                txtResultado.Text = n2.ToString();
-            }
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "9";
         }
 
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
-            if (String.IsNullOrEmpty(op))
+            //Exibição direta na tela do número pressionado
+            txtResultado.Text += "0";
+        }
+
+        private void btnVirgula_Click(object sender, RoutedEventArgs e)
+        {
+            //Inserção da " , " na tela
+            txtResultado.Text += ",";
+        }
+
+        private void btnIgual_Click(object sender, RoutedEventArgs e)
+        {
+            switch (op)
             {
-                n1 = (n1 * 10);
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = (n2 * 10);
-                txtResultado.Text = n2.ToString();
+                //caso "op" esteja preenchido com +, a conta será efetuada
+                case "+":
+                    memoria += float.Parse(txtResultado.Text);
+                    txtResultado.Text = memoria.ToString();
+                    break;
+
+                //caso "op" esteja preenchido com -, a conta será efetuada
+                case "-":
+                    memoria -= float.Parse(txtResultado.Text);
+                    txtResultado.Text = memoria.ToString();
+                    break;
+
+                //caso "op" esteja preenchido com *, a conta será efetuada
+                case "*":
+                    memoria *= float.Parse(txtResultado.Text);
+                    txtResultado.Text = memoria.ToString();
+                    break;
+
+                //caso "op" esteja preenchido com /, a conta será efetuada
+                case "/":
+                    memoria /= float.Parse(txtResultado.Text);
+                    txtResultado.Text = memoria.ToString();
+                    break;
+
+                //caso "op" esteja preenchido com pot, a conta será efetuada
+                case "pot":
+                    txtResultado.Text = (Math.Pow(memoria, float.Parse(txtResultado.Text)).ToString());
+                    break;
             }
         }
 
         private void btnAdicao_Click(object sender, RoutedEventArgs e)
+        {
+            //Caso a variável "op" estja preenchida com outro sinal, ocorre a alteração
+            //"memoria" será responsável por armazenar o que está na tela para futuras operações
+            if (op == "-" || op == "/" || op == "*" || op == "pot" || op == "m+")
+            {
+                op = "+";
+            }
+            else
+            {
+                memoria = float.Parse(txtResultado.Text);
+                txtResultado.Text = "";
+                op = "+";
+            }
+        }
+
+        private void btnSubtracao_Click(object sender, RoutedEventArgs e)
+        {
+            //Caso a variável "op" estja preenchida com outro sinal, ocorre a alteração
+            //"memoria" será responsável por armazenar o que está na tela para futuras operações
+            if (op == "-" || op == "/" || op == "*" || op == "pot" || op == "m+")
+            {
+                op = "-";
+            }
+            else
+            {
+                memoria = float.Parse(txtResultado.Text);
+                txtResultado.Text = "";
+                op = "-";
+            }
+        }
+
+        private void btnMultiplicacao_Click(object sender, RoutedEventArgs e)
+        {
+            //Caso a variável "op" estja preenchida com outro sinal, ocorre a alteração
+            //"memoria" será responsável por armazenar o que está na tela para futuras operações
+            if (op == "-" || op == "/" || op == "*" || op == "pot" || op == "m+")
+            {
+                op = "*";
+            }
+            else
+            {
+                memoria = float.Parse(txtResultado.Text);
+                txtResultado.Text = "";
+                op = "*";
+            }
+        }
+
+        private void btnDivisao_Click(object sender, RoutedEventArgs e)
+        {
+            //Caso a variável "op" estja preenchida com outro sinal, ocorre a alteração
+            //"memoria" será responsável por armazenar o que está na tela para futuras operações
+            //Símbolo: ALT + 246
+            if (op == "-" || op == "/" || op == "*" || op == "pot" || op == "m+")
+            {
+                op = "/";
+            }
+            else
+            {
+                memoria = float.Parse(txtResultado.Text);
+                txtResultado.Text = "";
+                op = "/";
+            }
+        }
+
+        private void btnPotenciacao_Click(object sender, RoutedEventArgs e)
         {
             op = "+";
             //O número 0 será mostrado na tela assim que o símbolo for pressionado
@@ -221,71 +224,29 @@ namespace Calculadora_WPF
 
         private void btnRaizQuadrada_Click(object sender, RoutedEventArgs e)
         {
+            //Validação do número positivo e realização da operação
             //Símbolo: ALT + 1141 no campo selecionar do mapa de caracteres
-            if (String.IsNullOrEmpty(op))
+            float num = float.Parse(txtResultado.Text);
+
+            if (num < 0)
             {
-                //Raiz quadrada de "n1"
-                txtResultado.Text = Math.Sqrt(n1).ToString();
-                //Função para converter "n1" para int para que seja armazenada na variável, e então executar a raiz quadrada
-                n1 = Convert.ToInt64(Math.Sqrt(n1));
+                txtResultado.Text = "Inválido. Raiz quadrada de número negativo.";
             }
             else
             {
-                //Raiz quadrada de "n2"
-                txtResultado.Text = Math.Sqrt(n2).ToString();
-                //Função para converter "n2" para int para que seja armazenada na variável, e então executar a raiz quadrada
-                n2 = Convert.ToInt64(Math.Sqrt(n2));
+                txtResultado.Text = Math.Sqrt(num).ToString();
             }
-        }
-
-        private void btnIgual_Click(object sender, RoutedEventArgs e)
-        {
-
-            switch (op)
-            {
-                //caso "op" esteja preenchido com +, a conta será efetuada
-                case "+":
-                    txtResultado.Text = (n1 + n2).ToString();
-                    mem = n1 + n2;
-                    break;
-
-                //caso "op" esteja preenchido com -, a conta será efetuada
-                case "-":
-                    txtResultado.Text = (n1 - n2).ToString();
-                    mem = n1 - n2;
-                    break;
-
-                //caso "op" esteja preenchido com *, a conta será efetuada
-                case "*":
-                    txtResultado.Text = (n1 * n2).ToString();
-                    mem = n1 * n2;
-                    break;
-
-                //caso "op" esteja preenchido com /, a conta será efetuada
-                case "/":
-                    txtResultado.Text = (n1 / n2).ToString();
-                    mem = n1 / n2;
-                    break;
-
-            }
-
         }
 
         private void btnApagar_Click(object sender, RoutedEventArgs e)
         {
-            //Função para identificar se a variável "op" esta vazia. Caso esteja, o if é executada, caso contrario o else será executado
-            //Dividir por 10 para que o último número seja apagado. Funcional para varíáveis long e int. Não-funcional para float e Double.
-            //Variável deve ser convertida para que seja exibida dentro do TextBox do WPF
+            //Função para apagar o último número digitado. x receberá a quantia de caracteres da String - 1;
+            //O if exibirá a string do início até x.
             //Símbolo: ALT + 27
-            if (String.IsNullOrEmpty(op))
+            int x = txtResultado.Text.Length - 1;
+            if (x >= 0)
             {
-                n1 = n1 / 10;
-                txtResultado.Text = n1.ToString();
-            }
-            else
-            {
-                n2 = n2 / 10;
-                txtResultado.Text = n2.ToString();
+                txtResultado.Text = txtResultado.Text.Substring(0, x);
             }
         }
 
@@ -293,21 +254,37 @@ namespace Calculadora_WPF
         {
             //Zerar as variáveis para resetar a conta
             //Símbolo: ALT + 0140
-            n1 = 0;
-            n2 = 0;
+            n1 = n2 = memoria = 0;
             op = "";
             //Zerar o resultado na tela ao pressionar o botão
-            txtResultado.Text = "0";
+            txtResultado.Text = "";
         }
 
-        private void btnMemoria_Click(object sender, RoutedEventArgs e)
+        private void btnMs_Click(object sender, RoutedEventArgs e)
         {
-            txtUltimoResultado.Text = mem.ToString();
-            if (String.IsNullOrEmpty(op) && mem.HasValue == true)
-            {
-                
-            }
+            //"mem" armazenará o que está na tela quando MS for pressionado
+            //MR receberá o que está em "mem"
+            mem = float.Parse(txtResultado.Text.ToString());
+            txtMr.Text = mem.ToString();
+        }
+
+        private void btnMc_Click(object sender, RoutedEventArgs e)
+        {
+            //MC irá zerar o que está armazenado na memoria da calculadora
+            mem = 0;
+            txtMr.Text = "";
+        }
+
+        private void btnMmais_Click(object sender, RoutedEventArgs e)
+        {
+            memoria += float.Parse(txtResultado.Text) + mem;
+            txtResultado.Text = memoria.ToString();
+        }
+
+        private void btnMmenos_Click(object sender, RoutedEventArgs e)
+        {
+            memoria -= float.Parse(txtResultado.Text) - mem;
+            txtResultado.Text = memoria.ToString();
         }
     }
-
 }
