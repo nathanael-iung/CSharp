@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora_WPF", "Calculad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "ClassLibrary1\EntityFramework.csproj", "{AEB241D4-CD3C-48DA-8B20-036187FF894D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_EntityFramework", "Aula_EntityFramework\Aula_EntityFramework.csproj", "{56393FBC-51C9-4E97-B22F-0BEED119DBF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AEB241D4-CD3C-48DA-8B20-036187FF894D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB241D4-CD3C-48DA-8B20-036187FF894D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB241D4-CD3C-48DA-8B20-036187FF894D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56393FBC-51C9-4E97-B22F-0BEED119DBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56393FBC-51C9-4E97-B22F-0BEED119DBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56393FBC-51C9-4E97-B22F-0BEED119DBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56393FBC-51C9-4E97-B22F-0BEED119DBF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

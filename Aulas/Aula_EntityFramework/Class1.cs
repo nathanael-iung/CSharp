@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityFramework
+namespace Aula_EntityFramework
 {
     public class Class1
     {
