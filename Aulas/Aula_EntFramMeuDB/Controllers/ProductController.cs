@@ -6,63 +6,69 @@ using System.Threading.Tasks;
 
 namespace Aula_EntFramMeuDB.Controllers
 {
-    class PersonController
+    class ProductController
     {
-        void Inserir(Person p)
+        void Insert(Product prod)
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-            contexto.Person.Add(p);
+            contexto.Product.Add(prod);
             contexto.SaveChanges();
         }
 
-        List<Person> ListarTodosPerson()
+        List<Product> TodosProducts()
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-            return contexto.Person.ToList();
+            return contexto.Product.ToList();
         }
 
-        Person BuscarPorID(int id)
+        Product BuscaPorId(int id)
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-            return contexto.Person.Find();
+            return contexto.Product.Find();
         }
 
         void Excluir(int id)
         {
-            Person pExcluir = BuscarPorID(id);
+            Product prodExcluir = BuscaPorId(id);
 
-            if(pExcluir != null)
+            if(prodExcluir != null)
             {
                 AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-                contexto.Person.Remove(pExcluir);
+                contexto.Product.Remove(prodExcluir);
                 contexto.SaveChanges();
             }
         }
 
-        void Editar(int id, Person novosDadosPerson)
+        void Edit(int id, Product novosDadosProduct)
         {
-            Person personAntigo = BuscarPorID(id);
+            Product productAntigo = BuscaPorId(id);
 
-            if(personAntigo != null)
+            if(productAntigo != null)
             {
-                personAntigo.FirstName = novosDadosPerson.FirstName;
-                personAntigo.LastName = novosDadosPerson.LastName;
-                personAntigo.Title = novosDadosPerson.Title;
+                productAntigo.Weight = novosDadosProduct.Weight;
+                productAntigo.Color = novosDadosProduct.Color;
+                productAntigo.BillOfMaterials = novosDadosProduct.BillOfMaterials;
 
                 AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-                contexto.Entry(personAntigo).State = System.Data.Entity.EntityState.Modified;
+                contexto.Entry(productAntigo).State = System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
             }
         }
 
-        List<Person> PesquisarPorFirstName(string firstName)
+        List<Product> PesquisarPorCor(string cor)
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
-            var list = from p in contexto.Person
-                       where p.FirstName == firstName
-                       select p;
+            var list = from prod in contexto.Product
+                       where prod.Color == cor
+                       select prod;
 
             return list.ToList();
         }
+
+
+
+
+
+
     }
 }

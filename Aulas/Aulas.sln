@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_EntityFramework", "Aul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_EntFramMeuDB", "Aula_EntFramMeuDB\Aula_EntFramMeuDB.csproj", "{8CC3F0FC-362A-4874-B6A6-BB8FCB65084E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirst", "CodeFirst\CodeFirst.csproj", "{B1F222BA-9E8C-40F5-A52D-C4458CA55E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8CC3F0FC-362A-4874-B6A6-BB8FCB65084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CC3F0FC-362A-4874-B6A6-BB8FCB65084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CC3F0FC-362A-4874-B6A6-BB8FCB65084E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F222BA-9E8C-40F5-A52D-C4458CA55E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F222BA-9E8C-40F5-A52D-C4458CA55E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F222BA-9E8C-40F5-A52D-C4458CA55E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F222BA-9E8C-40F5-A52D-C4458CA55E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
